@@ -1,5 +1,5 @@
 import { app } from "./app"
-import "dotenv/config"
+//import "dotenv/config"
 import { env } from "./env"
 /*import "dotenv/config"
 import fastify from "fastify"
