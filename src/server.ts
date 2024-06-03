@@ -13,7 +13,9 @@ const app = fastify()
 
 app.register(cookie)
 app.register(transctionsRoutes, { prefix: "/transactions" })*/
-const port = env.PORT || 4000;
-app.listen({port}).then(() => {
+app.listen({
+  host: "0.0.0.0",
+  port: env.PORT
+}).then(() => {
     console.log("Server is listening on port 3333")
   })
